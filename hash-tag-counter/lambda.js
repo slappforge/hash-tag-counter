@@ -13,9 +13,7 @@ exports.handler = function (event, context, callback) {
 		let application = payloadObj.Application;
 		let hashTags = payloadObj.HashTags;
 		console.log('Decoded Application : ' + application + ' and hashtags : ' + hashTags);
-
-		let hashTag = hashTags[0];
-
+		
 		hashTags.forEach(hashTag => {
 			let currentCount = 0;
 			ddb.get({
