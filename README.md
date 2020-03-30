@@ -65,12 +65,26 @@ After the deployment, you can test this sample application by sending an HTTP re
 6. If you were successful in putting a record to the Kinesis Stream, you'll get a response payload as follows.
 ```json
 {
-  "Code": "Success",
-  "Message": "Hash tag records are successfully populated to hash-tag-stream",
-  "Data": {
-    "ShardId": "shardId-000000000000",
-    "SequenceNumber": "49581435652594209436834844713832860988000069482648174594"
-  }
+  "Success Count": 4,
+  "Failed Count": 0,
+  "Success Data": [
+    {
+        "ShardId": "shardId-000000000000",
+        "SequenceNumber": "49581435652594209436834844713832860988000069482648174594"
+    },
+    {
+        "ShardId": "shardId-000000000000",
+        "SequenceNumber": "78965413652594209436834844713832860988000069482648174594"
+    },
+    {
+        "ShardId": "shardId-000000000000",
+        "SequenceNumber": "09654367652594209436834844713832860988000069482648174594"
+    },
+    {
+        "ShardId": "shardId-000000000000",
+        "SequenceNumber": "25781356652594209436834844713832860988000069482648174594"
+    },
+  ]
 }
 ```
 7. Then, to check if the processing was executed successfully, in the AWS Management Console, open the DynamoDB console at [https://console.aws.amazon.com/dynamodb/](https://console.aws.amazon.com/dynamodb/ "DynamoDB").
