@@ -40,8 +40,8 @@
           "layers": []
         },
         "cursor": {
-          "lineNumber": 37,
-          "column": 6
+          "lineNumber": 1,
+          "column": 1
         }
       },
       "c0f71961-d190-499a-ad22-5cd3245044ce": {
@@ -83,7 +83,6 @@
         "type": "DynamoDB",
         "config": {
           "mode": 0,
-          "operation": "get",
           "table": {
             "arn": "",
             "name": "HashTags",
@@ -93,22 +92,7 @@
             "sortKey": "HashTag",
             "sortKeyType": "S",
             "mode": 0
-          },
-          "isGlobalEditMode": false,
-          "parameters": {
-            "Key": {
-              "Application": "dd",
-              "HashTag": "ddd"
-            },
-            "Item": {},
-            "ExpressionAttributeValues": {}
-          },
-          "triggerParams": {},
-          "validator": {
-            "validatableFields": {},
-            "validity": true
-          },
-          "valid": true
+          }
         }
       },
       "kinesishashTagStream": {
@@ -183,7 +167,7 @@
     "platform": "AWS",
     "language": "nodejs",
     "platformRegions": {},
-    "lastSave": 1585562051096
+    "lastSave": 1585653078278
   },
   "VCS_STATE": {
     "provider": "GitHub",

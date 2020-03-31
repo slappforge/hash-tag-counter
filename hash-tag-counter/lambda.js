@@ -34,7 +34,7 @@ exports.handler = async (event) => {
 						TableName: 'HashTags',
 						Item: { 'Application': application, 'HashTag': hashTag, 'Count': currentCount }
 					}).promise();
-					
+
 					console.log('Successfully updated the hashtag count to :', currentCount, 'for hashtag :', hashTag, 'in application :',
 						application, data);
 
